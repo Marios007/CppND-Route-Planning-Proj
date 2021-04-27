@@ -10,3 +10,4 @@ lib/
 .vscode/launch.json
 .vscode/task.json
 .test
+.vscode/settings.json
