@@ -54,11 +54,13 @@ int main(int argc, const char **argv)
     
     float start_x, start_y, end_x, end_y;
 
-    std::cout << "Enter start coordinates (e.g. '10 10'): " << std::endl;
+    std::cout << "Enter start coordinates between 0 and 100 (e.g. '10 10'): " << std::endl;
     std::cin >> start_x >> start_y;
     
-    std::cout << "Enter end coordinates(e.g. '90 90'): " << std::endl;
+    std::cout << "Enter end coordinates between 0 and 100 (e.g. '90 90'): " << std::endl;
     std::cin >> end_x >> end_y;
+
+    //to do: check for invalid input? 
 
     // Build Model.
     RouteModel model{osm_data};
